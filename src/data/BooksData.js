@@ -1,85 +1,97 @@
-
-
-
-let bookList = [
+const bookList = {
+  books: [
     {
-        name: 'Sang Pemimpi',
-        author: 'Andrea Hirata',
-        years: '',
-        image: require('../assets/images/pemimpi.jpg')
+      id: 1,
+      name: "Sang Pemimpi",
+      author: "Andrea Hirata",
+      years: "",
+      image: require("../assets/images/pemimpi.jpg"),
     },
     {
-        name: 'Sapiens',
-        author: 'Yuval Noah Harari',
-        years: '',
-        image: require('../assets/images/yuval.jpg')
+      id: 2,
+      name: "Sapiens",
+      author: "Yuval Noah Harari",
+      years: "",
+      image: require("../assets/images/yuval.jpg"),
     },
     {
-        name: 'Animal Farm',
-        author: 'George Orwell',
-        years: '',
-        image: require('../assets/images/animal.jpg')
+      id: 3,
+      name: "Animal Farm",
+      author: "George Orwell",
+      years: "",
+      image: require("../assets/images/animal.jpg"),
     },
     {
-        name: 'Guns, Germs, Steel',
-        author: 'Jared Diamond',
-        years: '',
-        image: require('../assets/images/diamond.jpeg')
+      id: 4,
+      name: "Guns, Germs, Steel",
+      author: "Jared Diamond",
+      years: "",
+      image: require("../assets/images/diamond.jpeg"),
     },
     {
-        name: 'Thinking, Fast and Slow',
-        author: 'Daniel Kahneman',
-        years: '',
-        image: require('../assets/images/kahneman.jpg')
+      id: 5,
+      name: "Thinking, Fast and Slow",
+      author: "Daniel Kahneman",
+      years: "",
+      image: require("../assets/images/kahneman.jpg"),
     },
     {
-        name: 'The Power of Habit',
-        author: 'Charles Duhigg',
-        years: '',
-        image: require('../assets/images/habit.jpg')
+      id: 6,
+      name: "The Power of Habit",
+      author: "Charles Duhigg",
+      years: "",
+      image: require("../assets/images/habit.jpg"),
     },
     {
-        name: 'Clean Code',
-        author: 'Robert C. Martin',
-        years: '',
-        image: require('../assets/images/code.jpg')
+      id: 7,
+      name: "Clean Code",
+      author: "Robert C. Martin",
+      years: "",
+      image: require("../assets/images/code.jpg"),
     },
     {
-        name: 'Dunia Shopie',
-        author: 'Jostein Gaarder',
-        years: '',
-        image: require('../assets/images/shopie.jpg')
+      id: 8,
+      name: "Dunia Shopie",
+      author: "Jostein Gaarder",
+      years: "",
+      image: require("../assets/images/shopie.jpg"),
     },
     {
-        name: 'The Alchemist',
-        author: 'Paulo Coelho',
-        years: '',
-        image: require('../assets/images/alchemist.jpg')
+      id: 9,
+      name: "The Alchemist",
+      author: "Paulo Coelho",
+      years: "",
+      image: require("../assets/images/alchemist.jpg"),
     },
     {
-        name: 'Limitless',
-        author: 'Jim Kwik',
-        years: '',
-        image: require('../assets/images/limitless.jpg')
+      id: 10,
+      name: "Limitless",
+      author: "Jim Kwik",
+      years: "",
+      image: require("../assets/images/limitless.jpg"),
     },
     {
-        name: 'Janji',
-        author: 'Tere Liye',
-        years: '',
-        image: require('../assets/images/janji.jpeg')
+      id: 11,
+      name: "Janji",
+      author: "Tere Liye",
+      years: "",
+      image: require("../assets/images/janji.jpeg"),
     },
     {
-        name: 'Atomic Habits',
-        author: 'James Clear',
-        years: '',
-        image: require('../assets/images/atomic.jpg')
+      id: 12,
+      name: "Atomic Habits",
+      author: "James Clear",
+      years: "",
+      image: require("../assets/images/atomic.jpg"),
     },
     {
-        name: 'The Selfish Gene',
-        author: 'Richard Dawkins',
-        years: '',
-        image: require('../assets/images/selfish.jpg')
-    }
-];
+      id: 13,
+      name: "The Selfish Gene",
+      author: "Richard Dawkins",
+      years: "",
+      image: require("../assets/images/selfish.jpg"),
+    },
+  ]
+};
 
 export default bookList;

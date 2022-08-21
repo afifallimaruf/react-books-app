@@ -1,29 +1,29 @@
 import React from "react";
-import bookList from "../../../data/BooksData";
+import ButtonRemove from "../../ButtonRemove";
 import "./Favorites.css";
 
-const Favorites = () => {
-  const favorites = [];
-  if (favorites.length >= 1) {
-    return (
-      <div className="favorite">
-        <h1>Favorites</h1>
-        <div className=" favorite book-list">
-          {bookList.map((index) => {
-            return (
-              <img src={index.image} alt="books" height="100" width="100" />
-            );
-          })}
+const Favorites = (props) => {
+  const { favoriteBooks, onRemove } = props;
+
+  return (
+    <div className="favorites">
+      <h2 className="favorites-title">Favorites</h2>
+      {favoriteBooks.length === 0 && (
+        <div className="no-favorites-title">
+          <h2>Belum Ada DaftarFavorit</h2>
         </div>
+      )}
+      <div className="list-book-favorites">
+        {favoriteBooks.map((book) => (
+          <div className="card-books" key={book.id}>
+            <img className="image-favorites" src={book.image} alt="" />
+            <h2 className="book-title">{book.name}</h2>
+            <ButtonRemove onRemove={onRemove} book={book} />
+          </div>
+        ))}
       </div>
-    );
-  } else {
-    return (
-      <div className="no-favorites">
-        <h1>Belum Ada Daftar Favorites</h1>
-      </div>
-    );
-  }
+    </div>
+  );
 };
 
 export default Favorites;

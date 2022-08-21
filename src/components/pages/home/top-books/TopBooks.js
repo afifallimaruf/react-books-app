@@ -1,16 +1,18 @@
 import React from "react";
-import topBooks from "../../../../data/TopBooksData";
 import Card from "./Card";
 import "../Home.css";
 
-const TopBooks = () => {
+const TopBooks = (props) => {
+  const { books, onAdd } = props;
   return (
     <div>
       <br />
       <h1 className="top-title">Top Books</h1>
       <div className="wrapper">
-        {topBooks.map((book, index) => {
-          return <Card book={book}/>;
+        {books.map((book) => {
+          return <div key={book.id}>
+            <Card book={book} onAdd={onAdd} text='add' />
+          </div>
         })}
       </div>
     </div>

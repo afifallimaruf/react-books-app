@@ -1,20 +1,18 @@
 import React from "react";
+import Button from "../../../Button";
 import "./Card.css";
 
 const Card = (props) => {
-
-  const handleAddFavorites=()=>{
-    console.log('diklik');
-  }
+  const { book, onAdd, text} = props;
   return (
     <div className="card">
       <div className="card-body">
-        <img src={props.book.image} alt="books" className="card-image" />
-        <h1 className="card-title">{props.book.name}</h1>
+        <img src={book.image} alt="books" className="card-image" />
+        <h1 className="card-title">{book.name}</h1>
       </div>
-      <button className="card-button" onClick={handleAddFavorites}>Add to Favorites</button>
+      <Button onAdd={onAdd} book={book} text={text} />
     </div>
   );
-};
+}
 
 export default Card;

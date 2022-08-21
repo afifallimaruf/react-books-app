@@ -3,7 +3,8 @@ import "./Home.css";
 //import topBooks from "../../../data/TopBooksData";
 import TopBooks from "./top-books/TopBooks";
 
-const Home = () => {
+const Home = (props) => {
+  const { booksData, onAdd } = props;
   return (
     <>
       <div className="text-intro myBg">
@@ -13,7 +14,7 @@ const Home = () => {
         </div>
       </div>
       <div className="trending-section">
-       <TopBooks />
+       <TopBooks books={booksData} onAdd={onAdd} />
       </div>
     </>
   );

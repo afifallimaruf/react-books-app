@@ -1,0 +1,42 @@
+.button-add{
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 1rem;
+    border: 2px solid #d50000;
+    background: transparent;
+    color: #d50000;
+    border-radius: 0.2rem;
+    transition: background 200ms ease-in, color 200ms ease-in;   
+}
+
+.button-remove{
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 21px;
+    border: 2px solid #d50000;
+    background: transparent;
+    color: #d50000;
+    border-radius: 0.2rem;
+    transition: background 200ms ease-in, color 200ms ease-in;  
+    
+}
+
+.button-remove:hover{
+    background: #d50000;
+    color: white;
+}
+
+.button-remove:active{
+    transform: translateY(2px);
+}
+
+.button-add:hover{
+    background: #d50000;
+    color: white;
+}
+
+.button-add:active{
+    transform: translateY(2px);
+}
