@@ -40,4 +40,17 @@ body{
 .link-nav-title{
     text-decoration: none;
     color: white;
+    display: inline-block;
+    padding: 14px;
+    border-radius: 5px;
+}
+
+.nav-hover:hover{
+    background-color: aqua;
+    color: black;
+}
+
+.active{
+    background-color: aqua;
+    color: black;
 }
